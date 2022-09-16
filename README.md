@@ -4,7 +4,7 @@ This project is a simple calculator built with JavaScript Factory Functions.
 
 ## Project Link
 
-**coming soon**
+**https://calculator-with-js-factory-functions.netlify.app/**
 
 ## Screenshot
 
