@@ -1,6 +1,6 @@
 # Calculator built with JavaScript Factory Functions
 
-This project is a simple calculator built with JavaScript Factory Functions.
+This project is a simple calculator that runs expressions of the four basic math operations.
 
 ## Project Link
 
