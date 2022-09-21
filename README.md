@@ -1,4 +1,4 @@
-# Calculator built with JavaScript Factory Functions
+# Calculator built with JavaScript Factory Function
 
 This project is a simple calculator that runs expressions of the four basic math operations.
 
