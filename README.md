@@ -4,7 +4,7 @@ This project is a simple calculator that runs expressions of the four basic math
 
 ## Project Link
 
-**https://calculator-with-js-factory-functions.netlify.app/**
+**https://calculator-with-js-factory-function.netlify.app/**
 
 ## Screenshot
 
