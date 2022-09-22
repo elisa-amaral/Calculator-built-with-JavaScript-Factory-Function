@@ -1,6 +1,4 @@
 // JS Factory Function
-
-
 function buildCalculator()
 {
     return {
@@ -11,12 +9,6 @@ function buildCalculator()
 
 
         // methods
-        start() 
-        {
-            this.buttonClick()
-            this.enterKeypress()
-        },
-
         sendBtnToDisplay(btnValue)
         {
             this.display.value += btnValue
@@ -99,8 +91,13 @@ function buildCalculator()
                     this.doesMathOperation()
                 }
             });
-        }
+        },
 
+        start() 
+        {
+            this.buttonClick()
+            this.enterKeypress()
+        }
     };
 }
 
