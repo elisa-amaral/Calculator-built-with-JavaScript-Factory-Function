@@ -7,7 +7,6 @@ function buildCalculator()
         display: document.querySelector('.display'),
         clearBtn: document.querySelector('clear-btn'),
 
-
         // methods
         sendBtnToDisplay(btnValue)
         {
@@ -58,8 +57,7 @@ function buildCalculator()
 
                 if (el.classList.contains('mathOperation-button'))
                 {
-                    this.sendBtnToDisplay(el.innerText)
-                
+                    this.sendBtnToDisplay(el.innerText)        
                 }
                 
                 if (el.classList.contains('clear-btn'))
@@ -78,7 +76,6 @@ function buildCalculator()
                 }
 
                 this.display.focus()
-                
             });
         },
 
