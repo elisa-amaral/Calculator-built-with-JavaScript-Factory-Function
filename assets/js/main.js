@@ -55,7 +55,7 @@ function buildCalculator()
                    
                 const el = e.target // the document element that was clicked goes to 'el' const
 
-                if (el.classList.contains('mathOperation-button'))
+                if (el.classList.contains('math-operation-button'))
                 {
                     this.sendBtnToDisplay(el.innerText)        
                 }
