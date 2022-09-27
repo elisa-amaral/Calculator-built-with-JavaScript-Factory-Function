@@ -8,7 +8,7 @@ This project is a simple calculator that runs expressions of the four basic math
 
 ## Screenshot
 
-![Screenshot](assets/img/Screenshot.jpg)
+![Screenshot](assets/img/Screenshot.png)
 
 ## Technology Stack
 
