@@ -1,77 +1,63 @@
 // JS Factory Function
-function buildCalculator()
-{
+function buildCalculator() {
     return {
-
         // attributes
         display: document.querySelector('.display'),
         clearBtn: document.querySelector('clear-btn'),
 
         // methods
-        sendBtnToDisplay(btnValue)
-        {
+        sendBtnToDisplay(btnValue) {
             this.display.value += btnValue
         },
 
-        clearDisplay()
-        {
+        clearDisplay() {
             this.display.value = ''
         },
 
-        deleteOneValue()
-        {
+        deleteOneValue() {
             this.display.value = this.display.value.slice(0, -1) // slice(start, end) or slice(start at 1st input, end at before-last digit)
         },
 
-        doesMathOperation()
-        {
+        doesMathOperation() {
             let mathOperation = this.display.value
 
-            try 
-            {
+            try {
                 //converts the display string to math JS code
                 mathOperation = eval(mathOperation)
 
                 //if empty display (no input)
-                if (!mathOperation)
-                {
+                if (!mathOperation) {
                     alert('Invalid math operation')
                     return
                 }
-                
+
                 //shows result in this.display
                 this.display.value = mathOperation
             }
-            catch(err)
-            {
+            catch (err) {
                 alert('Invalid math operation')
                 return
             }
         },
 
-        buttonClick()
-        {
-            document.addEventListener('click',  e => {
-                   
+        buttonClick() {
+            document.addEventListener('click', e => {
+
                 const el = e.target // the document element that was clicked goes to 'el' const
 
-                if (el.classList.contains('math-operation-button'))
-                {
-                    this.sendBtnToDisplay(el.innerText)        
+                if (el.classList.contains('math-operation-button')) {
+                    this.sendBtnToDisplay(el.innerText)
                 }
-                
-                if (el.classList.contains('clear-btn'))
-                {
+
+                if (el.classList.contains('clear-btn')) {
                     this.clearDisplay()
                 }
 
-                if (el.classList.contains('delete-btn'))
-                {
+                if (el.classList.contains('delete-btn')) {
                     this.deleteOneValue() //deletes the last value from the display
                 }
 
-                if (el.classList.contains('equal-btn'))
-                {
+                if (el.classList.contains('equal-btn')) {
                     this.doesMathOperation()
                 }
 
@@ -79,19 +65,16 @@ function buildCalculator()
             });
         },
 
-        enterKeypress()
-        {
+        enterKeypress() {
             this.display.addEventListener('keyup', e => {
-                
-                if (e.keyCode === 13)
-                {
+
+                if (e.keyCode === 13) {
                     this.doesMathOperation()
                 }
             });
         },
 
-        start() 
-        {
+        start() {
             this.buttonClick()
             this.enterKeypress()
         }
