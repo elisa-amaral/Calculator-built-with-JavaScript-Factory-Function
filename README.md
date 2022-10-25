@@ -13,5 +13,5 @@ This project is a simple calculator that runs expressions of the four basic math
 ## Technology Stack
 
 + JavaScript
-+ HTML
 + CSS
++ HTML
