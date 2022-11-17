@@ -2,7 +2,7 @@
 
 This project is a simple calculator that runs expressions of the four basic math operations.
 
-## Project Link
+## Project Website
 
 **https://calculator-with-js-factory-function.netlify.app/**
 
